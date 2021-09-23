@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app-root">
+        <div class="main-container">
+            <header>
+                <nav>
+                    <div class="logo-menu">
+                        <div class="menu-icon">
+                            <img src="images/menu.png" alt="">
+                        </div>
+                        <div class="logo-icon">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="navbar-icons">
+                        <span>Latest</span>
+                        <span>Modern</span>
+                        <span>Contemporary</span>
+                        <span>Affordable</span>
+                    </div>
+                </nav>
+                <div class="hero-section">
+                    <div class="hero-section-lamp">
+                        <div class="lamp-containter">
+                            <div class="lamp-section-one">
+                                <img src="images/lamp.png" alt="">
+                            </div>
+                            <div class="lamp-section-two">
+                                <img src="images/light.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="hero-section-content">
+                        <div class="text-content">
+                            <h1>Latest </h1>
+                            <h1>in Lightning</h1>
+                            <span>This is the firest lamp from our comapany. we're making a huge collection of modern
+                                lamps
+                                in all categories from home use to office use.</span>
+                        </div>
+                        <div class="btn">
+                            <a>Check All Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <script>
+        document.body.onload = function() {
+            document.querySelector(".lamp-section-one > img").addEventListener("click",()=>{
+                let lamp = document.querySelector(".lamp-section-two");
+                if(lamp.style.display == 'none'){
+                    lamp.style.display = 'block'
+                }else{
+                    lamp.style.display = 'none'
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
